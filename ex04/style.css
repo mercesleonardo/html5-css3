@@ -1,0 +1,12 @@
+#title {
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.paragraph {
+    color: darkred;
+}
+
+#title, .paragraph {
+    font-weight: bold;
+    font-size: 3em;
+}
