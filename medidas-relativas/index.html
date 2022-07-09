@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de medida relativas</title>
+    <style>
+        body {
+            font-size: 20px;
+        }
+        .box {
+            font-size: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box-interno {
+            background-color: #CCC;
+            width: 10em; /* O em é baseado no font-size do item pai, que neste caso é a classe .box EX: 1.5em: 20px* 1.5em = 30px */
+            height: 10em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unidades de medida relativas</h1>
+
+    <div class="box">
+        <div class="box-interno">
+            <p>Está é uma frase</p>
+        </div>
+    </div>
+</body>
+</html>
