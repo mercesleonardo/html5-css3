@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,22 @@
     <title>Tags Fieldset e Legend</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <form method="post" action="arquivo.php">
+    <form method="get" action="arquivo.php">
+        <input type="hidden" name="country" value="BR">
 
         <fieldset>
             <legend>Dados Pessoais</legend>
             <label for="inome">
                 Primeiro Nome: <br>
-                <input type="text" name="nome" placeholder="Primeiro Nome" id="inome" required minlength="2" maxlength="12">
+                <input type="text" name="nome" placeholder="Primeiro Nome" id="inome" required minlength="2"
+                    maxlength="12">
             </label> <br>
             <label for="isobrenome">
                 Sobrenome: <br>
-                <input type="text" name="sobrenome" placeholder="Sobrenome" id="isobrenome" required minlength="2" maxlength="20">
+                <input type="text" name="sobrenome" placeholder="Sobrenome" id="isobrenome" required minlength="2"
+                    maxlength="20">
             </label> <br>
             <label for="iemail">
                 Email: <br>
@@ -51,4 +56,5 @@
         <input type="submit" value="Cadastrar">
     </form>
 </body>
+
 </html>
