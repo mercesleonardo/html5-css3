@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags Fieldset e Legend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form method="post">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="inome">
+                Primeiro Nome: <br>
+                <input type="text" name="nome" placeholder="Primeiro Nome" id="inome">
+            </label> <br>
+            <label for="isobrenome">
+                Sobrenome: <br>
+                <input type="text" name="sobrenome" placeholder="Sobrenome" id="isobrenome">
+            </label> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label for="iempresa">
+                Nome da empresa: <br>
+                <input type="text" name="empresa" placeholder="Nome da empresa" id="iempresa">
+            </label> <br>
+            <label for="icargo">
+                Cargo na empresa: <br>
+                <input type="text" name="cargo" placeholder="Cargo na empresa" id="icargo">
+            </label> <br>
+        </fieldset>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
