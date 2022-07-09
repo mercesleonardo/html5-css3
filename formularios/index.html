@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -13,37 +14,33 @@
 
     <h2>Área de cadastro</h2>
     <form action="paginas/cadastro.html" method="get">
-        <p><input type="number" name="number" id="name" placeholder="insira sua nota"></p>
 
-        <p>
-            <label for="sexo">Escolha seu sexo:</label>
-            <input type="radio" name="sexo" id="mulher">
-            <input type="radio" name="sexo" id="homem">
-        <p>
-            <select name="vendas" id="ivendas" size="2" multiple>
-                <option value="romance">Mais Vendidos</option>
-                <option value="ficcao" selected>Recentes</option>
-            </select>
-        </p>
-        <p>
-            <textarea name="duvidas" id="iduvidas">
-
-            </textarea>
-        </p>
-
-        <p>
-            <button>Fazer cadastro</button>
-        </p>
-        <input type="checkbox" id="teste">
-        <label for="teste">Eu aceito os termos</label>
-        <br>
         <label>
-            <input type="checkbox" name="" id="">
-            Eu aceito os termos
+            Nome completo: <br>
+            <input type="text" name="nome" id="inome" placeholder="Insira seu nome" required>
         </label>
 
+        <label>
+            Descrição: <br>
+            <textarea name="descricao"></textarea>
+        </label>
 
-        <p><input type="submit" value="Cadastrar"></p>
+        <label>
+            Categoria:<br>
+            <select name="categoria">
+                <option value="1">Categoria 1</option>
+                <option value="2">Categoria 2</option>
+                <option value="3">Categoria 3</option>
+                <option value="4">Categoria 4</option>
+                <option value="5">Categoria 5</option>
+            </select>
+        </label>
+
+        <label>
+            <input type="checkbox">
+            Eu declaro que li e aceito os <a href="paginas/termos.html" target="_blank" class="termoslink">termos de uso.</a>
+        </label>
+        <button type="submit">Fazer cadastro</button>
 
     </form>
     <h2>Área de login</h2>
