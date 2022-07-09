@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form method="get" action="arquivo.php">
+    <form method="post" action="arquivo.php" enctype="multipart/form-data">
         <input type="hidden" name="country" value="BR">
 
         <fieldset>
@@ -33,6 +33,11 @@
             <label for="iidade">
                 Idade: <br>
                 <input type="number" name="idade" placeholder="Idade" id="iidade" required min="18" max="80">
+            </label> <br>
+
+            <label for="ifile">
+                Foto: <br>
+                <input type="file" name="file" id="ifile" accept="image/*">
             </label>
 
         </fieldset>
