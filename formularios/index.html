@@ -15,9 +15,10 @@
     <form action="paginas/cadastro.html" method="get">
         <p><input type="number" name="number" id="name" placeholder="insira sua nota"></p>
 
-        <p><input type="radio" name="sexo" id="mulher">
+        <p>
+            <label for="sexo">Escolha seu sexo:</label>
+            <input type="radio" name="sexo" id="mulher">
             <input type="radio" name="sexo" id="homem">
-        
         <p>
             <select name="vendas" id="ivendas" size="2" multiple>
                 <option value="romance">Mais Vendidos</option>
@@ -33,7 +34,13 @@
         <p>
             <button>Fazer cadastro</button>
         </p>
-
+        <input type="checkbox" id="teste">
+        <label for="teste">Eu aceito os termos</label>
+        <br>
+        <label>
+            <input type="checkbox" name="" id="">
+            Eu aceito os termos
+        </label>
 
 
         <p><input type="submit" value="Cadastrar"></p>
