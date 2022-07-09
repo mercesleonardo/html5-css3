@@ -8,18 +8,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form method="post">
+    <form method="post" action="arquivo.php">
 
         <fieldset>
             <legend>Dados Pessoais</legend>
             <label for="inome">
                 Primeiro Nome: <br>
-                <input type="text" name="nome" placeholder="Primeiro Nome" id="inome">
+                <input type="text" name="nome" placeholder="Primeiro Nome" id="inome" required minlength="2" maxlength="12">
             </label> <br>
             <label for="isobrenome">
                 Sobrenome: <br>
-                <input type="text" name="sobrenome" placeholder="Sobrenome" id="isobrenome">
+                <input type="text" name="sobrenome" placeholder="Sobrenome" id="isobrenome" required minlength="2" maxlength="20">
             </label> <br>
+            <label for="iemail">
+                Email: <br>
+                <input type="email" name="email" placeholder="email@email.com" id="iemail" required>
+            </label> <br>
+
+            <label for="iidade">
+                Idade: <br>
+                <input type="number" name="idade" placeholder="Idade" id="iidade" required min="18" max="80">
+            </label>
+
         </fieldset>
 
         <fieldset>
@@ -32,6 +42,10 @@
                 Cargo na empresa: <br>
                 <input type="text" name="cargo" placeholder="Cargo na empresa" id="icargo">
             </label> <br>
+            <label for="icontratacao">
+                Contratação: <br>
+                <input type="date" name="contratacao" id="icontratacao">
+            </label>
         </fieldset>
 
         <input type="submit" value="Cadastrar">
