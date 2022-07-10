@@ -1,0 +1,28 @@
+:root {
+    --bg-color: darkslategray;
+    --bg-second: darkcyan;
+    --font-color: white;
+    --font-size: 25px;
+
+}
+
+body {
+    background-color: var(--bg-color);
+    font-size: var(--font-size);
+}
+h1 {
+    text-align: center;
+    color: var(--font-color, blueviolet);
+    text-decoration: underline;
+}
+.container {
+    color: white;
+    text-align: justify;
+    background-color: var(--bg-second);
+}
+
+@media (max-width: 768px) {
+    :root {
+        --font-size: 15px;
+    }
+}
