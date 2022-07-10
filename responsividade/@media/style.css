@@ -1,0 +1,27 @@
+body {
+    background-color: darkcyan;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+    body {
+        background-color: darkmagenta;
+    }
+}
+
+@media (min-width: 667px) and (max-width:900px){
+    body {
+        background-color: darkgoldenrod;
+    }
+}
+
+@media (min-width: 300px) and (max-width:667px) {
+    body {
+        background-color: darkolivegreen;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+}
