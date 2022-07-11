@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 500px;
+    height: 400px;
+    background-color: darkcyan;
+    background-image: linear-gradient(to right,  darkcyan, darkgreen);
+}
