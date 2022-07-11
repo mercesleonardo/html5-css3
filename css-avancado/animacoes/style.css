@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+@keyframes container {
+    0% {
+        background-color: green;
+        top: 0px;
+        left: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        top: 0px;
+        left: 200px;
+    }
+
+    50% {
+        background-color: blue;
+        top: 200px;
+        left: 200px;
+    }
+
+    75% {
+        background-color: red;
+        top: 200px;
+        left: 0px;
+    }
+
+    100% {
+        background-color: green;
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.container {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: green;
+    animation-name: container;
+    animation-duration: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
