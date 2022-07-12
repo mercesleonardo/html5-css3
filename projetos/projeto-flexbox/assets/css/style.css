@@ -1,9 +1,14 @@
 @charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 header {
     display: flex;
     justify-content: center;
@@ -16,44 +21,127 @@ header {
     width: 990px;
     background-color: aquamarine;
 }
+
 .logo {
     display: flex;
     align-items: center;
     background-color: aqua;
 }
+
 .menu {
     background-color: rgb(234, 124, 238);
     display: flex;
     align-items: center;
 }
-nav ul, nav li {
+
+nav ul,
+nav li {
     list-style: none;
     text-decoration: none;
-    
+
 }
+
 nav ul {
     display: flex;
 }
+
 nav a {
     display: block;
     padding: 15px;
     text-decoration: none;
     text-transform: uppercase;
     color: #727272;
-    font-family: Arial, Helvetica, sans-serif;
 }
+
 nav .active a {
     background-color: #39AAE1;
     color: white;
 }
+
 nav a:hover {
     background-color: #39AAE1;
     color: white;
 }
 
 #banner {
+    display: flex;
+    justify-content: center;
     background-image: url('../images/img1.jpg');
     background-position: center;
     background-size: cover;
     height: 670px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.banner-headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #39AAE1;
+}
+
+.banner-headline h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.521);
+    max-width: 350px;
+
+}
+
+.banner-headline h2 {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    max-width: 350px;
+    color: white;
+    font-size: 20px;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.521);
+}
+
+.banner-options {
+    display: flex;
+    height: 210px;
+    background-color: #727272;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+.banner1 {
+    background-color: #39aae1;
+}
+.banner2 {
+    background-color: #0079c7;
+}
+.banner3 {
+    background-color: #2b4c99;
+}
+.banner_title {
+    font-size: 21px;
+}
+.banner_desc {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner-options a {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
 }
