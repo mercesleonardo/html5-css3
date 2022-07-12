@@ -145,3 +145,13 @@ nav a:hover {
     text-decoration: none;
     font-size: 12px;
 }
+.opening {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 5px;
+    margin-top: 20px;
+    color: white;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.178);
+}
