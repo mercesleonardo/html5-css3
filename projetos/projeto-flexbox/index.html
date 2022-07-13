@@ -7,19 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../projeto-flexbox/assets/css/style.css">
     <script type="text/javascript">
-        window.onload = function() {
-            document.querySelector(".menu_mobile").addEventListener("click", function() {
-                if(document.querySelector(".menu nav ul").style.display == "flex") {
+        window.onload = function () {
+            document.querySelector(".menu_mobile").addEventListener("click", function () {
+                if (document.querySelector(".menu nav ul").style.display == "flex") {
                     document.querySelector(".menu nav ul").style.display = "none"
                 } else {
                     document.querySelector(".menu nav ul").style.display = "flex";
                 }
-        
+
             });
         };    
     </script>
     <title>MediCenter</title>
-    
+
 </head>
 
 <body>
@@ -57,7 +57,7 @@
             <div class="banner-options">
                 <div class="banner1">
                     <div class="banner_title">Emergency Case</div>
-                    <div class="banner_desc">Texto qualer</div>
+                    <div class="banner_desc">Texto qualquer</div>
                     <a href="#">Read more</a>
                 </div>
                 <div class="banner2">
@@ -69,9 +69,20 @@
                     <div class="banner_title">
                         Opening Hourse
                     </div>
+                    <div class="banner_desc">
+                        Monday - Friday
+                        <div class="banner_border"></div>
+                        <div class="banner_desc">
+                            Saturday
+                            <div class="banner_border"></div>
+                        </div>
+                        <div class="banner_desc">
+                            Sunday
+                            <div class="banner_border"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
     <section id="geral">
         <div class="container">
