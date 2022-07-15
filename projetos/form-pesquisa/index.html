@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleições 2022</title>
+    <link rel="stylesheet" href="style.css" media="screen"/>
+</head>
+
+<body>
+
+    <div>
+        <h1 id="title">Cadastro de DEVs</h1>
+        <p id="subtitle">Complete suas informações</p>
+        <br>
+    </div>
+
+    <main>
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="inome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="inome" required placeholder="Nome">
+                </div>
+        
+                <div class="campo">
+                    <label for="isobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="isobrenome" required placeholder="Sobrenome">
+                </div>
+            </fieldset>
+            <div class="campo">
+                <label for="iemail"><strong>Email</strong></label>
+                <input type="email" name="email" id="iemail" required placeholder="Email">
+            </div>
+            <div class="campo">
+                <label for=""><strong>De qual lado da aplicação você desenvolve?</strong></label>
+                <label for="">
+                    <input type="radio" name="opcao" id="iopcao" required value="frontend" checked>Front-End
+                </label>
+                <label for="">
+                    <input type="radio" name="opcao" id="iopcao" required value="backend">Back-End
+                </label>
+                <label for="">
+                    <input type="radio" name="opcao" id="iopcao" required value="fullstack">Fullstack
+                </label>
+            </div>
+            <div class="campo">
+                <label for="isenioridade"><strong>Senioridade</strong></label>
+                <select name="senioridade" id="isenioridade">
+                    <option value="" selected disabled>Selecione</option>
+                    <option value="">Júnior</option>
+                    <option value="">Pleno</option>
+                    <option value="">Senior</option>
+                </select>
+            </div>
+            <fieldset class="grupo">
+                <div id="check">
+                    <label for=""><strong>Selecione as tecnologias que utiliza</strong>:</label> <br><br>
+                    <input type="checkbox" name="tecnologia1" id="itecnologia1" value="HTML">
+                    <label for="itecnologia1">HTML</label>
+                    <input type="checkbox" name="tecnologia2" id="itecnologia2" value="CSS">
+                    <label for="itecnologia2">CSS</label>
+                    <input type="checkbox" name="tecnologia3" id="itecnologia3" value="Javascript">
+                    <label for="itecnologia3">JacaScript</label>
+                    <input type="checkbox" name="tecnologia4" id="itecnologia4" value="PHP">
+                    <label for="itecnologia4">PHP</label>
+                    <input type="checkbox" name="tecnologia5" id="itecnologia5" value="C#">
+                    <label for="itecnologia5">C#</label>
+                    <input type="checkbox" name="tecnologia6" id="itecnologia6" value="Python">
+                    <label for="itecnologia6">Python</label>
+                    <input type="checkbox" name="tecnologia7" id="itecnologia7" value="Java">
+                    <label for="itecnologia7">Java</label>
+                </div>
+            </fieldset>
+            <div class="campo">
+                <br>
+                <label for="idescricao"><strong>Conte um pouco sobre a sua experiência</strong></label>
+                <textarea name="descricao" id="idescricao" cols="30" rows="6" style="width: 26em;"></textarea>
+            </div>
+
+            <button class="botao" type="submit" onsubmit="">Enviar </button>
+        </for>
+    </main>
+
+</body>
+
+</html>
