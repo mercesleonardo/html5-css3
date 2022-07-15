@@ -7,6 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tributo Ayrton Senna</title>
     <link rel="stylesheet" href="../pag-tributo/css/style.css">
+    <script type="text/javascript">
+        window.onload = function () {
+            document.querySelector(".menu_mobile").addEventListener("click", function () {
+                if (document.querySelector(".menu nav ul").style.display == "flex") {
+                    document.querySelector(".menu nav ul").style.display = "none"
+                } else {
+                    document.querySelector(".menu nav ul").style.display = "flex";
+                }
+
+            });
+        };    
+    </script>
 </head>
 
 <body>
@@ -20,11 +32,16 @@
             </div>
             <div class="menu">
                 <nav>
+                    <div class="menu_mobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#geral">Biografia</a></li>
-                        <li><a href="#">Títulos</a></li>
-                        <li><a href="#">Mais Informações</a></li>
+                        <li><a href="#titulos">Títulos</a></li>
+                        <li><a href="#info">Mais Informações</a></li>
                     </ul>
                 </nav>
             </div>
@@ -35,15 +52,12 @@
         <section id="banner">
             <div class="container">
                 <div></div>
-                <div class="assinatura">
-                    <img src="img/assinatura-branca.png" alt="">
-                </div>
             </div>
         </section>
         <section id="geral">
             <h2>Biografia</h2>
             <div class="resumo">
-                    <img src="img/senna-capacete.jpg" alt="Foto-bio">
+                    <img src="img/senna-render3.png" alt="Foto-bio">
                     <p>
                         Ayrton Senna (1960-1994) foi um piloto brasileiro de Fórmula 1. Ídolo do automobilismo conquistou três
                         vezes o campeonato mundial, em 1988, 1990 e 1991. Morreu no auge da carreira, pilotando no circuito de Ímola, na Itália.
@@ -66,38 +80,43 @@
             </div>
         </section>
         <section id="titulos">
-            <h2>Títulos na Fórmula 1</h2>
             <div class="conquistas">
                 <div class="f1">
-                    <img src="img/primeiro.jpg" alt="">
+                    <img src="img/1.jpg" alt="">
                     <div class="f1-texto">
-                        <p>(1988) Primeiro título Mundial</p>
-                        <p>(1988) Primeiro título Mundial</p>
-                        <p>(1988) Primeiro título Mundial</p>
-                        <p>(1988) Primeiro título Mundial</p>
+                        <h3>Primeiro título Mundial</h3>
+                        <p><strong>Ano:</strong> 1988</p>
+                        <p><strong>Equipe:</strong> Mclaren-Honda</p>
+                        <p><strong>Corridas: </strong> 16 provas</p>
+                        <p><strong>Podios: </strong>13 pole positions</p>
+                        <p><strong>Vitórias: </strong> 08 vitórias</p>
                     </div>
                 </div>
                 
             </div>
             <div class="conquistas">
                 <div class="f1">
-                    <img src="img/primeiro.jpg" alt="">
+                    <img src="img/2.jpg" alt="">
                     <div class="f1-texto">
-                        <p>(1988) Primeiro título Mundial</p>
-                        <p>(1988) Primeiro título Mundial</p>
-                        <p>(1988) Primeiro título Mundial</p>
-                        <p>(1988) Primeiro título Mundial</p>
+                        <h3>Segundo título Mundial</h3>
+                        <p><strong>Ano:</strong> 1990</p>
+                        <p><strong>Equipe:</strong> Mclaren-Honda</p>
+                        <p><strong>Corridas: </strong> 16 provas</p>
+                        <p><strong>Podios: </strong>10 pole positions</p>
+                        <p><strong>Vitórias: </strong> 06 vitórias</p>
                     </div>
                 </div>
             </div>
             <div class="conquistas">
                 <div class="f1">
-                    <img src="img/primeiro.jpg" alt="">
+                    <img src="img/3.jpg" alt="">
                     <div class="f1-texto">
-                        <p>(1988) Primeiro título Mundial</p>
-                        <p>(1988) Primeiro título Mundial</p>
-                        <p>(1988) Primeiro título Mundial</p>
-                        <p>(1988) Primeiro título Mundial</p>
+                        <h3>Terceiro título Mundial</h3>
+                        <p><strong>Ano:</strong> 1991</p>
+                        <p><strong>Equipe:</strong> Williams</p>
+                        <p><strong>Corridas: </strong> 16 provas</p>
+                        <p><strong>Podios: </strong>08 pole positions</p>
+                        <p><strong>Vitórias: </strong> 07 vitórias</p>
                     </div>
                 </div>
             </div>
