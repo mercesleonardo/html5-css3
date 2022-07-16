@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        window.onload = function () {
+            document.querySelector(".menu_mobile").addEventListener("click", function () {
+                if (document.querySelector(".menu nav ul").style.display == "flex") {
+                    document.querySelector(".menu nav ul").style.display = "none"
+                } else {
+                    document.querySelector(".menu nav ul").style.display = "flex";
+                }
+
+            });
+        };    
+    </script>
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div class="title">
+                <h2> Your Awesome Site</h2>
+            </div>
+            <div class="menu">
+                <nav>
+                    <div class="menu_mobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
+                    <ul>
+                        <li class="active"><a href="#">HOME</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main id="geral">
+        <section class="container">
+            <div class="text">
+                <h1>Landing Page</h1>
+                <h3>Templete was with HTML, CSS and Javascript</h3>
+            </div>
+            <div class="social">
+                <div class="social-media1">
+                    <ul>
+                        <li><a href="#">Linkedin</a></li>
+                    </ul>
+                </div>
+                <div class="social-media2">
+                    <ul>
+                        <li><a href="#">Github</a></li>
+                    </ul>
+                </div>
+                <div class="social-media3">
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <p>Desenvolvido por <a href="https://github.com/mercesleonardo" target="_blank"> Leonardo M Carvalho</a></p>
+    </footer>
+</body>
+</html>
