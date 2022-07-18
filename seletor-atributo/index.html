@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor pelo atributo</title>
+    <style>
+        input, a {
+            display: block;
+        }
+
+        [required] {
+            background-color: aqua;
+        }
+        input[type="password"] {
+            background-color: blue;
+        }
+
+        a [href*="google"] {
+            background-color: yellow;
+        }
+
+        div.container {
+            margin: 30px;
+            height: 20px;
+            background-color: yellowgreen;
+        }
+        div:empty {
+            background-color: blueviolet;
+        }
+
+        p::first-letter {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+    p::first-line {
+        background-color: aquamarine;
+    }
+
+    div#row {
+        width: 100px;
+        height: 100px;
+        background-color: firebrick;
+    }
+    div#row:first-child {
+        border-top-left-radius: 5px ;
+        border-top-right-radius: 5px ;
+    }
+    div#row:last-child {
+        border-top-left-radius: 5px ;
+        border-top-right-radius: 5px ;
+    }
+        
+    </style>
+</head>
+<body>
+    <h1> Seletores</h1>
+    <h2>Seletor pelo atributo</h2>
+
+    <input type="text" name="" required>
+
+    <input type="text" name="">
+
+    <input type="password" name="" id="">
+
+    <a href="www.google.com">google</a>
+    <a href="https://interativos.ge.globo.com/futebol/futebol-internacional/mata-mata/qual-camisa-mais-inusitada-de-202223">futebol</a>
+    <a href="www.google.com">google</a>
+    <a href="https://g1.globo.com/politica/eleicoes/2022/noticia/2022/07/18/moraes-manda-tirar-do-ar-postagens-de-apoiadores-de-bolsonaro-com-fake-news-sobre-lula.ghtml">Eleições</a>
+    <a href="www.google.com">google</a>
+    <a href="www.google.com">google</a>
+
+    <h2>Seletor de Elemento Vazio</h2>
+
+    <div class="container">
+        <p>Texto 1</p>
+    </div   >
+    <div class="container">
+        <p>Texto 2</p>
+    </div >
+    <div class="container">
+        <p></p>
+    </div>
+    <div class="container">
+        <p>Texto 4</p>
+    </div>
+    
+    <h2>Seletor de Primeira letra e Primeira Linha</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum hic ipsa totam tempore amet optio beatae! Sed odio possimus et ullam corrupti nostrum atque doloribus architecto! Fugit, distinctio rem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit iste praesentium aspernatur qui expedita sunt eaque laborum hic, nesciunt, eligendi, voluptatum similique maiores. Sequi quas dolor quo quia? Minus, consequuntur.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, autem beatae reiciendis quae aliquam corrupti hic earum dolor. Asperiores ipsum doloribus ratione at consectetur quam ea, quasi voluptas. Hic, quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ducimus quidem. Atque laborum sed nulla repellendus asperiores possimus incidunt dignissimos modi! Necessitatibus quia eligendi, natus libero quis obcaecati vero amet.</p>
+
+    <h2>Seletor de Primeiro e Último Elemento</h2>
+    <div id="row"></div>
+    <div id="row"></div>
+    <div id="row"></div>
+    <div id="row"></div>
+
+    <h2>Seletor Negativo</h2>
+
+    <p>
+        No CSS colocar :not(elemento) {
+
+        }
+    </p>
+
+    <h2>Seletor NTH</h2>
+    <p> Para selecionar um elemento expecifico, independente da sua posição no CSS: div:nth-child(elemento) {
+    }
+    </p>
+    <p>
+        De baixo para cima no CSS: div:nth-last-child(elemento)
+    </p>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
