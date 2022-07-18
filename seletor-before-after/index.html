@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor Before/After</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        span::before {
+            content: "->";
+            background-color: aquamarine;
+        }
+        span::after {
+            content: "<-";
+            background-color: aquamarine;
+        }
+        div::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(255, 0, 0);
+        }
+        div::after {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <span> Texto 1</span>
+    <br><br>
+     <div>texto 2</div>
+</body>
+</html>

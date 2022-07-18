@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor Before/After (exemplo do balão)</title>
+    <style>
+        .container {
+            background-color: darkcyan;
+            display: inline-block;
+            color: #FFF;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .container::after {
+            content: "";
+           
+            display: block;
+            position: absolute;
+            margin-top: 20px;
+
+            border: 20px solid;
+            border-color: darkcyan transparent transparent transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Olá, tudo bem?<br>
+        Estou bem!
+
+    </div>
+</body>
+</html>
