@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela zebra</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th {
+            border:  1px solid black;
+        }
+        thead {
+            background-color: gray;
+            color: white;
+        }
+        thead tr th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: darkcyan;
+            color: #FFF;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Tabela em zebra</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>MAJOR</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>8619</td>
+                <td>Leonardo Carvalho</td>
+                <td>Desenvolvedor</td>
+            </tr>
+            <tr>
+                <td>0000</td>
+                <td>Jéssica Lourenço</td>
+                <td>Medica</td>
+            </tr>
+            <tr>
+                <td>1234</td>
+                <td>Daniel Carvalho</td>
+                <td>Engenheiro</td>
+            </tr>
+            <tr>
+                <td>1234</td>
+                <td>Adan Carvalho</td>
+                <td>Arquiteto</td>
+            </tr>
+            <tr>
+                <td>1234</td>
+                <td>Deivid Mercês</td>
+                <td>Gerente</td>
+            </tr>
+            <tr>
+                <td>1234</td>
+                <td>Maria Eduarda</td>
+                <td>Estudante</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
